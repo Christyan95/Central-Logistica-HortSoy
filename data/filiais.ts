@@ -1,0 +1,173 @@
+export interface Filial {
+  id: string;
+  name: string;
+  address: string;
+  city: string;
+  lat: number;
+  lng: number;
+  link?: string;
+  icone?: string;
+}
+
+export const filiais: Filial[] = [
+  {
+    id: "1",
+    name: "CSC",
+    address: "AV. SANTOS DUMONT, 130",
+    city: "Uberaba - MG",
+    lat: -19.74674029577659,
+    lng: -47.93915410279788,
+    link: "https://maps.app.goo.gl/fyeeoFGsbZKB9XEu6",
+    icone: "orange"
+  },
+  {
+    id: "2",
+    name: "Santa Juliana",
+    address: "AV. JOAQUIM HONORIO DA SILVA, 20",
+    city: "Santa Juliana - MG",
+    lat: -19.309723882362004,
+    lng: -47.53408813068095,
+    link: "https://maps.app.goo.gl/4M9MvdKPrLpbiegs5",
+    icone: "orange"
+  },
+  {
+    id: "3",
+    name: "Patrocínio",
+    address: "AV. FARIA PEREIRA, 4677",
+    city: "Patrocínio - MG",
+    lat: -18.94758276124383,
+    lng: -47.01414452883512,
+    link: "https://maps.app.goo.gl/fFhios9dDTEe1Wwd8",
+    icone: "orange"
+  },
+  {
+    id: "4",
+    name: "Ibiá",
+    address: "AV. BARTOLOMEU RIBEIRO DE PAIVA, 934",
+    city: "Ibiá - MG",
+    lat: -19.501366202940318,
+    lng: -46.5500492,
+    link: "https://maps.app.goo.gl/bH4tTTLZPDqEQ3yx8",
+    icone: "orange"
+  },
+  {
+    id: "5",
+    name: "Araxá",
+    address: "AV. JOSE ANANIAS AGUIAR, 5835",
+    city: "Araxá - MG",
+    lat: -19.575693180359735,
+    lng: -46.954577357670225,
+    link: "https://maps.app.goo.gl/jyxtBeDQN77QFJgi9",
+    icone: "orange"
+  },
+  {
+    id: "6",
+    name: "São Gotardo",
+    address: "ROD. MG 235, 590 KM 88",
+    city: "São Gotardo - MG",
+    lat: -19.353443401392177,
+    lng: -46.130930584407984,
+    link: "https://maps.app.goo.gl/DzJVgHy9Hn5GhFxR8",
+    icone: "orange"
+  },
+  {
+    id: "7",
+    name: "Iraí de Minas",
+    address: "AV. SETE DE SETEMBRO, 285",
+    city: "Iraí de Minas - MG",
+    lat: -18.987639853586494,
+    lng: -47.4699099962926,
+    link: "https://maps.app.goo.gl/XsR3rL4tbc8ddQkc9",
+    icone: "orange"
+  },
+  {
+    id: "8",
+    name: "Patos de Minas",
+    address: "AV. PRESIDENTE TANCREDO NEVES, 540",
+    city: "Patos de Minas - MG",
+    lat: -18.6206581049706121,
+    lng: -46.5117439,
+    link: "https://maps.app.goo.gl/6iEMCYAjG8WmN2um9",
+    icone: "orange"
+  },
+  {
+    id: "9",
+    name: "Coromandel",
+    address: "AV. GOVERNADOR ISRAEL PINHEIRO, 691",
+    city: "Coromandel - MG",
+    lat: -18.483346130629013,
+    lng: -47.202062399999996,
+    link: "https://maps.app.goo.gl/uLiejz5g2PWbLsmy6",
+    icone: "orange"
+  },
+  {
+    id: "10",
+    name: "Uberaba",
+    address: "AV. DEP. JOSE MARCUS CHEREM, 1020",
+    city: "Uberaba - MG",
+    lat: -19.773565592758338,
+    lng: -47.93589340970933,
+    link: "https://maps.app.goo.gl/X86d192AibphuJ1a6",
+    icone: "orange"
+  },
+  {
+    id: "11",
+    name: "Passos",
+    address: "ROD. MG - 050, 628",
+    city: "Passos - MG",
+    lat: -20.73928087976301,
+    lng: -46.59562507116487,
+    link: "https://maps.app.goo.gl/jfV4bCUmtXbEnFar9",
+    icone: "orange"
+  },
+  {
+    id: "12",
+    name: "Carmo do Rio Claro",
+    address: "RUA PADRE PENTEADO, 15",
+    city: "Carmo do Rio Claro - MG",
+    lat: -20.970523827095946,
+    lng: -46.130458600000004,
+    link: "https://maps.app.goo.gl/woF4xVQtqCUPomfw9",
+    icone: "orange"
+  },
+  {
+    id: "13",
+    name: "Piumhi",
+    address: "RUA PADRE ABEL, 1396",
+    city: "Piumhi - MG",
+    lat: -20.46166500023169,
+    lng: -45.968429945872074,
+    link: "https://maps.app.goo.gl/S1g5TkkesmQRLTJC7",
+    icone: "orange"
+  },
+  {
+    id: "14",
+    name: "Bambuí",
+    address: "RUA ALZIRA TORRES, 681",
+    city: "Bambuí - MG",
+    lat: -20.017331749704148,
+    lng: -45.9855067,
+    link: "https://maps.app.goo.gl/a9BcQQsscCR7VptF6",
+    icone: "orange"
+  },
+  {
+    id: "15",
+    name: "Conceição das Alagoas",
+    address: "AV. JOAO MARQUES DE OLIVEIRA, 527",
+    city: "Conceição das Alagoas - MG",
+    lat: -19.93211132022286,
+    lng: -48.377358,
+    link: "https://maps.app.goo.gl/Y1KbwHgJAwynPrJt9",
+    icone: "orange"
+  },
+  {
+    id: "16",
+    name: "Sacramento",
+    address: "RUA MARIO DE SANTI, 280",
+    city: "Sacramento - MG",
+    lat: -19.872176921154335,
+    lng: -47.43103069814453,
+    link: "https://maps.app.goo.gl/wvqYYikGG1nqZBHm6",
+    icone: "orange"
+  }
+];
