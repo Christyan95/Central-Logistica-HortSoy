@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import { filiais, Filial } from '../data/filiais';
 import Sidebar from '../components/Sidebar';
-import { optimizeRouteOrder, getOSRMRouting, getGoogleMapsRouteUrl } from '../utils/routing';
+import { optimizeRouteOrder, getOSRMRouting, getGoogleMapsRouteUrl, formatDuration } from '../utils/routing';
 import { Sun, Moon, FileText, X, TrendingUp, MapPin, Gauge, Navigation } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -175,7 +175,10 @@ export default function Home() {
                 <div key={idx} style={{ display: 'flex', flexDirection: 'column', gap: '8px', padding: '12px', background: 'var(--surface)', borderRadius: '14px' }}>
                   <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', opacity: 0.6 }}>
                     <span>Trecho {idx + 1}</span>
-                    <span style={{ color: 'var(--primary)', fontWeight: 700 }}>{(leg.distance / 1000).toFixed(1)} km</span>
+                    <div style={{ display: 'flex', gap: '12px' }}>
+                      <span style={{ color: 'var(--primary)', fontWeight: 700 }}>{(leg.distance / 1000).toFixed(1)} km</span>
+                      <span style={{ color: 'var(--primary)', opacity: 0.8, fontWeight: 500 }}>{formatDuration(leg.duration)}</span>
+                    </div>
                   </div>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '12px', fontSize: '13px', fontWeight: 600 }}>
                     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
@@ -200,7 +203,7 @@ export default function Home() {
                 </div>
                 <div style={{ padding: '16px', borderRadius: '16px', background: 'var(--surface)', border: '1px solid var(--border)' }}>
                   <div style={{ fontSize: '10px', textTransform: 'uppercase', opacity: 0.8 }}>Tempo Estimado</div>
-                  <div style={{ fontSize: '20px', fontWeight: 800 }}>{(routeStats.duration / 3600).toFixed(1)}h</div>
+                  <div style={{ fontSize: '20px', fontWeight: 800 }}>{formatDuration(routeStats.duration)}</div>
                 </div>
               </div>
 

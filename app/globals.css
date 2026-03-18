@@ -3,8 +3,8 @@
   --background: #f0f2f5;
   --foreground: #1c1e21;
   --primary: #075000;
-  --secondary: #0d8c00;
-  --accent: #0d8c00;
+  --secondary: #075000;
+  --accent: #075000;
   --surface: rgba(255, 255, 255, 0.6);
   --surface-hover: rgba(255, 255, 255, 0.9);
   --border: rgba(0, 0, 0, 0.08);
@@ -17,7 +17,7 @@
 [data-theme='dark'] {
   --background: #0a0a0c;
   --foreground: #f0f0f4;
-  --primary: #075000;
+  --primary: #0d8c00;
   --secondary: #0d8c00;
   --accent: #0d8c00;
   --surface: rgba(255, 255, 255, 0.05);
