@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Filial } from '../data/filiais';
+import Image from 'next/image';
+import { Filial } from '@/data/filiais';
 import { MapPin, Navigation, TrendingUp, ChevronLeft, ChevronRight, RotateCcw } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -93,9 +94,11 @@ export default function Sidebar({ filiais, onSelect, selectedId, onOptimizeRoute
               justifyContent: 'center',
               alignItems: 'center'
             }}>
-              <img 
+              <Image 
                 src="/hortsoy-logo.png" 
                 alt="HortSoy Logo" 
+                width={200}
+                height={80}
                 style={{ 
                   maxHeight: '80px', 
                   maxWidth: '100%',

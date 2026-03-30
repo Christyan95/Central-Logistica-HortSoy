@@ -2,14 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import { filiais, Filial } from '../data/filiais';
-import Sidebar from '../components/Sidebar';
-import { optimizeRouteOrder, getOSRMRouting, getGoogleMapsRouteUrl, formatDuration } from '../utils/routing';
+import { filiais, Filial } from '@/data/filiais';
+import Sidebar from '@/components/Sidebar';
+import { optimizeRouteOrder, getOSRMRouting, getGoogleMapsRouteUrl, formatDuration } from '@/utils/routing';
 import { Sun, Moon, FileText, X, TrendingUp, MapPin, Gauge, Navigation } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 // Load Map dynamically to avoid SSR issues with Leaflet
-const Map = dynamic(() => import('../components/Map'), { 
+const Map = dynamic(() => import('@/components/Map'), { 
   ssr: false,
   loading: () => <div style={{ height: '100vh', width: '100%', background: 'var(--background)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
     <div className="loader"></div>

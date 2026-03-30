@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap, Polyline, GeoJSON, useMapEvents, ZoomControl, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { Filial } from '../data/filiais';
+import { Filial } from '@/data/filiais';
 import { MapPin, Navigation } from 'lucide-react';
 
 // Fix icons... 
