@@ -222,8 +222,6 @@ Configurado no `layout.tsx` para máxima visibilidade:
 
 ---
 
-## 📄 Licença
+## 👤 Autor & Arquiteto
 
-Projeto privado — © 2026 **HortSoy Central Logística**. Todos os direitos reservados.
-
-Desenvolvido com tecnologia de ponta para o agronegócio moderno.
+**Christyan Silva**
